@@ -1,0 +1,54 @@
+@use 'variables';
+
+.odd-version h2, .even-version h2{
+text-transform: uppercase;
+}
+
+.odd-version, .even-version{
+padding: 30px;
+position: relative;
+min-height: 222px;
+}
+
+@media (min-width: 1200px) {
+.odd-version, .even-version{
+min-height: 252px;
+}
+}
+
+.buttons-wrapper{
+position: absolute;
+bottom: 30px;
+}
+
+
+.odd-version{
+background-color: variables.$background2;
+}
+
+.more-p{
+text-transform: uppercase;
+font-weight: bold;
+color: variables.$text-color;
+}
+
+.more-button{
+text-decoration: none;
+color: variables.$text-color;
+}
+
+.more-arrow{
+width: 30px;
+}
+
+.arrow-div{
+margin-left: -9px;
+}
+
+.actualities p{
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+}

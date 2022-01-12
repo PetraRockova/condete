@@ -1,0 +1,206 @@
+@use 'variables';
+
+.logo{
+max-width: 60px;
+margin-left: 8px;
+}
+
+@media (min-width: 768px) {
+.logo {max-width: 90px;}
+}
+
+.top-section{
+background-color: variables.$primary-color;
+padding: 10px;
+align-items: center;
+margin: 0;
+padding: 10px 0;
+}
+
+.row-gap-top-section{
+row-gap: 10px;
+}
+
+.top-section-info{
+color: variables.$text-color2;
+text-transform: uppercase;
+padding-right: 0;
+}
+
+.top-section-info div{
+text-align: left;
+}
+
+.top-section-info li{
+font-size: 0.625rem; 
+}
+
+@media (min-width: 768px) {
+.top-section-info li {font-size: 0.875rem;}
+}
+
+@media (min-width: 1200px) {
+.top-section-info li {font-size: 1rem;}
+}
+
+@media (min-width: 1200px) {
+.extra-padding-left {padding-left: -50px;}
+}
+
+.hero-desktop{
+display: none;
+}
+
+@media (min-width: 576px) {
+.hero-desktop {display: block;}
+.hero-mobile {display: none;}
+}
+
+
+.container-fluid{
+background-color: variables.$primary-color;
+text-align: center;
+}
+
+.navbar > .container, .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl
+{
+display: block;
+}
+
+.container-fluid{
+padding: 0;
+}
+
+.navbar-light .navbar-toggler{ 
+color: variables.$text-color2;
+border: none;
+
+}
+
+
+.navbar-light .navbar-brand {
+color: variables.$text-color2;
+text-transform: uppercase; 
+}
+
+.navbar-light .navbar-nav .nav-link{
+color: variables.$text-color2;
+text-transform: uppercase;
+font-size: 1.25rem;
+padding: 18px 30px;
+text-align: left;
+}
+
+.navbar-expand-lg .navbar-collapse{
+justify-content: center;
+}
+
+.navbar{
+margin-bottom: 80px;
+padding: 0;
+}
+
+.navbar-brand:hover{
+background-color: rgba(60, 206, 206, 0.6); 
+}
+
+.navbar-brand a:hover, .nav-link .dropdown-toggle a:hover{
+color: variables.$text-color2;
+}
+
+.nav-item:hover{  
+background-color: rgba(60, 206, 206, 0.6); 
+}
+
+.navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus{
+color: variables.$text-color2;
+} 
+
+#navbarDarkDropdownMenuLink, #navbarDarkDropdownMenuLink2{ 
+color: white;
+margin-bottom:0;
+}
+
+.hamburger-menu{
+width: 20px;
+}
+
+.arrow-menu{
+max-width: 18px;
+}
+
+@media (min-width: 768px) {
+.hamburger-menu {width: 30px;}
+}
+
+a.navbar-brand, li.navbar-brand{
+margin: 0;
+padding: 18px 30px; 
+text-align: left;
+}
+
+.navbar-toggler {
+display: flex;
+align-items: center;
+margin: 0 auto;  
+padding: 12px 20px; 
+}
+
+@media (min-width: 768px) {
+.navbar-toggler  {padding: 18px 20px;}
+}
+
+.navbar-toggler:focus{
+box-shadow: none;
+}
+
+.dropdown-menu-dark { 
+background-color: variables.$primary-color; 
+}
+
+.dropdown-menu{
+border-radius: 0;
+border: none;
+}
+
+.dropdown-item{
+font-size: 1rem;
+padding: 10px 20px;
+}
+
+@media (min-width: 1200px) {
+.dropdown-item {font-size: 1.1rem;}
+}
+     
+
+.dropdown-menu-dark .dropdown-item{
+color: variables.$text-color2;
+}
+
+.dropdown-toggle::after{
+display: none;
+}
+
+.dropdown-menu-dark .dropdown-item.active, .dropdown-menu-dark .dropdown-item:active{ 
+background-color: rgba(255, 255, 255, 0.15); 
+}
+
+.arrow{
+margin-left: 10px;
+}
+
+.menu{
+margin-right: 12px;
+font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+.menu {font-size: 1.5rem;}
+}
+
+.dropdown{
+margin-bottom: 0;
+}
+
+
+

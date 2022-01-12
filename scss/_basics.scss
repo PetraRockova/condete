@@ -1,0 +1,126 @@
+@use 'variables';
+
+
+html {
+    box-sizing: border-box;
+}
+  
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+  
+body {
+margin: 0 auto;  
+font-family: 'Poppins', sans-serif; 
+color: variables.$text-color; 
+text-align: left; 
+font-size: 0.875rem;
+max-width: 1900px;
+}
+
+
+main{
+max-width: 1400px;  
+margin-left: auto;
+margin-right: auto;
+padding: 0 20px; 
+}
+
+img{
+max-width: 100%;
+}
+
+h1, h2, h3 {
+color: variables.$text-color;     
+font-weight: bold; 
+}
+
+h1{
+font-size: 1.5rem;
+margin-bottom: 30px;
+}
+
+@media (min-width: 1200px) {
+h1 {font-size: 2.2rem;}
+}
+
+h2{
+font-size: 1.3rem;
+margin-bottom: 14px; 
+}
+
+@media (min-width: 1200px) {
+h2 {font-size: 1.6rem;}
+} 
+
+
+h3{
+font-size: 1.1rem; 
+margin-bottom: 14px;
+}
+
+.bekosplit-types h3 {
+font-size:  1rem;
+}
+
+@media (min-width: 1200px) {
+h3 {font-size: 1.3rem;}
+}
+
+
+@media (min-width: 1200px) {
+p, li, .buttons, .submit, .download-file, label {font-size: 1.125rem}
+}
+
+ol{
+margin-bottom:50px;
+}
+
+.box-labels{
+margin-bottom: 0;
+}
+
+.buttons, .light{
+display: inline-block;
+border: none;
+padding: 8px 18px;
+margin-right: 10px;
+color: variables.$text-color;
+margin-bottom: 8px;
+box-shadow: 1px 1px 1px silver;
+}
+
+.buttons{
+background-color: variables.$background2;
+}
+
+.light{
+background-color: variables.$text-color2;
+}
+
+.submit{
+box-shadow: 1px 1px 1px silver;
+}
+
+.buttons:focus, .buttons:hover{  
+background-color: variables.$primary-color;
+border: none;
+color: variables.$text-color2;
+transition: .2s ease-in-out;
+outline: none;
+}
+
+.buttons:active{
+border: none;
+}
+
+.list-item-arrow{
+width: 8px;
+margin: 0px 16px;
+}
+
+.unordered-list-item{
+display: grid;
+grid-template-columns: auto 1fr;
+align-items: center;
+}

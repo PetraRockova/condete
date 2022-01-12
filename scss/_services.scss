@@ -1,0 +1,32 @@
+@use 'variables';
+
+
+.bekomat-images{
+display: flex;
+max-width: 300px;
+}
+
+
+.div-services{
+    background-color: variables.$box-background;
+    padding: 0 0 50px 0;
+    box-shadow: variables.$box-shadow;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
+} 
+
+.div-services h1{
+    font-weight: normal;
+    color: variables.$text-color2;
+    background-color: variables.$primary-color;
+    padding: 14px;
+    }
+
+.service-wrapper{
+padding: 0 40px;
+}
+
+.service-wrapper h2{
+margin-top: 50px;
+}

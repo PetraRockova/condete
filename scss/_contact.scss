@@ -1,0 +1,85 @@
+@use 'variables';
+
+.contact{
+margin: 0;
+}
+.box-mail, .box-phone, .box-adress{
+display: flex;
+align-items: center;
+margin-bottom: 30px;
+}
+
+.box-mail p, .box-phone p, .box-adress p{
+margin-bottom: 0;
+}
+
+.mail-i { 
+width: 50px;
+margin-right: 14px
+}
+
+.phone-i, .adress-i{
+width: 55px;
+margin-right: 14px;
+}
+
+.contact iframe {
+padding-right: 30px;
+margin-bottom: 50px;
+}
+
+.contactform h2{
+background-color:  variables.$primary-color;
+color: variables.$text-color2;
+font-weight: normal;
+padding: 10px 0 10px 10px;
+width: 90%;
+text-align: center;
+font-size: 26px;
+box-shadow: 1px 1px 1px silver;
+}
+
+.form-field > label, .form-field-area textarea {
+display: block;
+margin-bottom: 8px;
+}
+
+.form-field-area label{
+margin-bottom: 8px; 
+}
+
+
+.form-field input{
+padding: 10px;
+width: 90%;
+border: 1px solid #a5a4a4;
+font-family: 'Poppins', sans-serif;
+font-size: 16px;
+}
+
+.form-field-area textarea{
+width: 90%;
+height: 200px;
+border: 1px solid #a5a4a4;
+}
+
+.form-field input:focus, .form-field-area textarea:focus { 
+border: 1px solid variables.$primary-color;
+outline: 0;
+}
+
+.form-field{
+margin-bottom: 10px;
+}
+
+.submit{
+color: variables.$text-color2;
+background-color: variables.$primary-color;
+border: none;
+padding: 12px 30px;
+}
+
+.submit:focus, .submit:hover{
+background-color: rgba(36, 185, 185, 1);
+border: none;
+}  
